@@ -5,9 +5,9 @@ from cliente import Cliente
 
 
 class ArmazenadorArquivo:
-    def __init__(self, arquivo_clientes: str = 'clientes.txt', arquivo_contas: str = 'contas.txt'):
+    def __init__(self, arquivo_clientes = 'clientes.txt', arquivo_contas = 'contas.txt'):
         self.arquivo_clientes = arquivo_clientes
-        self.arquivo_contas: str = arquivo_contas
+        self.arquivo_contas = arquivo_contas
 
     def salvar_clientes(self, clientes):
         fClientes = open(self.arquivo_clientes, 'w')
